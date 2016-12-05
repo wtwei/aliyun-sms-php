@@ -27,41 +27,54 @@ class SmsService
      * Template variables' data.
      * @var array|null
      */
-    protected $data;
+    protected $params;
 
-    public function with($data)
-    {
-        $this->data = $data;
-        return $this;
-    }
-
-    public function signName($signName)
-    {
-        $this->signName = $signName;
-
-        return $this;
-    }
-
-    public function template($template)
-    {
-        $this->template = $template;
-
-        return $this;
-    }
-
-    public function getParams()
-    {
-        return json_encode($this->data);
-    }
-
+    /**
+     * @return string
+     */
     public function getSignName()
     {
         return $this->signName;
     }
 
+    /**
+     * @param string $signName
+     */
+    public function setSignName($signName)
+    {
+        $this->signName = $signName;
+    }
+
+    /**
+     * @return string
+     */
     public function getTemplate()
     {
         return $this->template;
+    }
+
+    /**
+     * @param string $template
+     */
+    public function setTemplate($template)
+    {
+        $this->template = $template;
+    }
+
+    /**
+     * @return array|null
+     */
+    public function getParams()
+    {
+        return $this->params;
+    }
+
+    /**
+     * @param array|null $params
+     */
+    public function setParams($params)
+    {
+        $this->params = json_encode($params);
     }
 	
     /**
