@@ -105,7 +105,7 @@ class SmsService
             $request->setRecNum($receiver);
             try {
                 $response = $this->client->getAcsResponse($request);
-                print_r($response);
+                $ret = true;
             } catch (\ClientException $e) {
                 throw new SmsException($e->getErrorMessage(), -1);
             }
