@@ -1,6 +1,6 @@
 {
     "name": "wtwei/aliyun-sms-php",
-    "description": "阿里云 SMS",
+    "description": "阿里云 SMS forked from HyanCat/aliyun-sms-php",
     "license": "MIT",
     "authors": [
         {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "HyanCat\\AliyunSMS\\": "src/"
+            "Wtwei\\AliyunSMS\\": "src/"
         }
     },
     "minimum-stability": "stable"

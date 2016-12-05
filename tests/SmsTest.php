@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use HyanCat\AliyunSMS\SmsService;
+use Wtwei\AliyunSMS\SmsService;
 use PHPUnit_Framework_TestCase;
 
 /**
