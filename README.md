@@ -4,7 +4,7 @@
 
 ## Installation
 
-    composer require hyancat/aliyun-sms-php
+    composer require wtwei/aliyun-sms-php
 
 ## Usage
 

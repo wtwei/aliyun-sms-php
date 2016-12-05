@@ -18,6 +18,5 @@
         "psr-4": {
             "Wtwei\\AliyunSMS\\": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
