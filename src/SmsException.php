@@ -1,6 +1,6 @@
 <?php
 
-namespace HyanCat\AliyunSMS;
+namespace Wtwei\AliyunSMS;
 
 /**
  * SMS Exception.
