@@ -107,7 +107,8 @@ class SmsService
                 $response = $this->client->getAcsResponse($request);
                 $ret = true;
             } catch (\ClientException $e) {
-                throw new SmsException($e->getErrorMessage(), -1);
+                $msg = $e->getErrorMessage() != 'Frequency limit reaches.' ?: '发送过于频繁，请稍候再试';
+                throw new SmsException($msg, -1);
             }
         }
 		
